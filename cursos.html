@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #000000;
+            color: rgb(255, 255, 255),
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 40px auto;
+            display: flex;
+            flex-direction: column;
+            gap: 60px;
+        }
+
+        .card {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .card.reverse {
+            flex-direction: row-reverse;
+        }
+
+        img {
+            width: 420px;
+            border-radius: 18px;
+        }
+
+        h2 {
+            width: 0;
+            border-radius: 18px;
+        }
+        
+        p {
+            line-height: 1.6;
+            max-width: 450px;
+            color: #fafafa;
+        }
+
+        .btn {
+            background: #d62828;
+            padding: 10px 18px;
+            border-radius: 8px;
+            color: white;
+            text-decoration: nome;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 18px;
+        }
+
+        @media (max-width: 800px) {
+            .card {
+                flex-direction: column;
+                text-align: center;
+            }
+            .card.reverse {
+                flex-direction: colum;
+            }
+            img {
+                width: 100%;
+                max-width: 420px;
+            }
+            p {
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+
+        <div class="card">
+            <div>
+                <h2>Curso de finanças</h2>
+                <p>
+
+                    
+                </p>
+                <a class="btn" href="#"></a>
+
+                <img src="https://i.ibb.co/TWC7KpB/finan-as.png" alt="imagem Finanças">
+            </div>
+
+
+            <div class="card reverse">
+                <div>
+
+                    <h2>Curso de Desenvolvimento de sistemas</h2>
+
+                    <p>
+                        Aprenda de
+                    </p>
+                </div>
+
+            </div>
+
+
+
+
+
+        </div>
+
+
+
+
+    </div>
+    
+</body>
+</html>
