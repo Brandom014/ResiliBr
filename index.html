@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResiliBR - Cursos Profissionais</title>
+    <link rel="shortcut icon" href="img/Design sem nome.png" type="image/x-icon">
+
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #0d0d0d;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+
+        header {
+            width: 100%;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
+        header img {
+            height: 60px;
+        }
+
+        nav a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1300px;
+            margin: auto;
+        }
+
+        .section {
+            padding: 60px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .text-box {
+            max-width: 550px;
+        }
+
+        h1, h2, h3 {
+            margin: 0 0 20px 0;
+            line-height: 1.2;
+        }
+
+        h1 { font-size: 42px; }
+        h2 { font-size: 36px; }
+        h3 { font-size: 26px; }
+
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #c91818;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 18px;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #a31515;
+        }
+
+        .img-box img {
+            width: 480px;
+            max-width: 100%;
+            border-radius: 15px;
+        }
+
+        .course-section {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        .course {
+            width: 48%;
+            margin-bottom: 40px;
+        }
+
+        .course img {
+            width: 100%;
+            border-radius: 15px;
+            margin-bottom: 15px;
+        }
+
+        .footer {
+            margin-top: 60px;
+            padding: 50px 0;
+            border-top: 1px solid #333;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .footer-box {
+            width: 45%;
+            min-width: 280px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Cabeçalho -->
+    <header data-aos="fade-down" data-aos-duration="1000">
+        <img src="img/Captura de tela 2025-12-05 112854-Photoroom (1).png" alt="ResiliBR Logo">
+
+        <nav>
+            <a href="#">Início</a>
+            <a href="#">Cursos</a>
+            <a href="#">Sobre</a>
+            <a href="#">Contato</a>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <!-- Seção 1 -->
+        <div class="section">
+            <div class="text-box" data-aos="fade-right" data-aos-duration="1000">
+                <h1>Domine suas Finanças e Construa um Patrimônio Sólido</h1>
+                <p>
+                    Aprenda estratégias reais de organização financeira,
+                    investimentos e renda extra.
+                </p>
+                <a class="btn">Quero esse curso</a>
+            </div>
+
+            <div class="img-box" data-aos="fade-left" data-aos-duration="1000">
+                <img src="img/Captura de tela 2025-12-05 112744.png" alt="Curso de finanças">
+            </div>
+        </div>
+
+        <!-- Seção 2 -->
+        <div class="section" style="text-align: center; flex-direction: column;">
+            <h2 data-aos="zoom-in" data-aos-duration="1200">
+                Aprenda e Evolua com<br>Nossos Cursos Profissionais
+            </h2>
+
+            <p data-aos="fade-up" data-aos-duration="1000" style="max-width: 700px;">
+                Finanças e Desenvolvimento de Sistemas — duas trilhas para transformar sua vida pessoal e profissional.
+            </p>
+
+            <div data-aos="fade-up" data-aos-duration="1200">
+                <a class="btn">Ver Cursos</a>
+                <a class="btn" style="margin-left: 10px;">Sobre a Plataforma</a>
+            </div>
+        </div>
+
+        <!-- Cursos -->
+        <div class="course-section">
+
+            <div class="course" data-aos="fade-up-right" data-aos-duration="1200">
+                <h3>Curso de Finanças</h3>
+                <p>
+                    Aprenda como potencializar sua renda e fazer seu dinheiro trabalhar por você.
+                    Ideal para iniciantes e quem deseja melhorar a vida financeira.
+                </p>
+                <img src="img/Captura de tela 2025-12-05 113239.png" alt="Curso de Finanças">
+                <a class="btn">Saiba mais</a>
+            </div>
+
+            <div class="course" data-aos="fade-up-left" data-aos-duration="1200">
+                <h3>Curso de Desenvolvimento de sistemas</h3>
+                <p>
+                    Aprenda Desenvolvimento de Sistemas do zero, dominando lógica de programação,
+                    front-end, back-end e bancos de dados — tudo com projetos práticos.
+                </p>
+                <img src="img/Captura de tela 2025-12-05 113356.png" alt="Curso de Desenvolvimento de Sistemas">
+                <a class="btn">Saiba mais</a>
+            </div>
+        </div>
+
+        <!-- Rodapé -->
+        <div class="footer">
+            <div class="footer-box" data-aos="fade-right" data-aos-duration="1000">
+                <h3>Sobre a Plataforma</h3>
+                <p>
+                    Somos uma plataforma dedicada a ensinar habilidades que transformam vidas.
+                    Cursos práticos e diretos ao ponto, pensados para iniciantes e profissionais
+                    que desejam evoluir rapidamente.
+                </p>
+            </div>
+
+            <div class="footer-box" data-aos="fade-left" data-aos-duration="1000">
+                <h3>Contato</h3>
+                <p>Email: suporte.resilibr@gmail.com</p>
+                <p>WhatsApp / Telefone: (11) 40028-8922</p>
+                <p>Redes Sociais: ResiliBr</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- AOS SCRIPT -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+</html>
