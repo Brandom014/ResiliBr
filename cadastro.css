@@ -6,7 +6,7 @@
 }
 
 body {
-    background: linear-gradient(135deg, #941717, #000000);
+    background: linear-gradient(135deg, #790606, #000000);
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -19,14 +19,14 @@ body {
     padding: 20px;
 }
 
-.login-box {
-    background: linear-gradient(135deg, #2c2a2a, #000000);
+.cadastro-box {
+    background: linear-gradient(135deg, #2c2a2a,#000000);
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 8px 18px rgba(241, 241, 241, 0.2);
 }
 
-.login-box h2 {
+.cadastro-box h2 {
     text-align: center;
     margin-bottom: 25px;
     color: #ffffff;
@@ -38,7 +38,7 @@ body {
 
 .input-group label {
     font-size: 14px;
-    color: #f82d2d;
+    color: #d62222;
 }
 
 .input-group input {
@@ -58,7 +58,7 @@ body {
 .btn {
     width: 100%;
     padding: 12px;
-    background: linear-gradient(135deg, #1f0404, #a51d1d);
+    background: linear-gradient(135deg, #1b0404,#b81515);
     border: none;
     color: rgb(255, 255, 255);
     border-radius: 6px;
@@ -68,25 +68,25 @@ body {
 }
 
 .btn:hover {
-    background: #520a0a;
+    background: #420808;
 }
 
-.register-text {
+.login-text {
     text-align: center;
     margin-top: 15px;
     font-size: 14px;
 }
 
-.register-text a {
-    color: #aa2f2f;
+.login-text a {
+    color: #ca1c1c;
     text-decoration: none;
     font-weight: bold;
 }
 
-.register-text a:hover {
+.login-text a:hover {
     text-decoration: underline;
 }
 
-.register-text {
-    color: rgb(255, 255, 255);   /* “Não tem conta?” */
+.login-text {
+    color: white; 
 }
