@@ -1,123 +1,108 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cursos</title>
-
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background: #000000;
-            color: rgb(255, 255, 255),
-        }
-
-        .container {
-            width: 90%;
-            max-width: 1100px;
-            margin: 40px auto;
-            display: flex;
-            flex-direction: column;
-            gap: 60px;
-        }
-
-        .card {
-            display: flex;
-            align-items: center;
-            gap: 30px;
-        }
-
-        .card.reverse {
-            flex-direction: row-reverse;
-        }
-
-        img {
-            width: 420px;
-            border-radius: 18px;
-        }
-
-        h2 {
-            width: 0;
-            border-radius: 18px;
-        }
-        
-        p {
-            line-height: 1.6;
-            max-width: 450px;
-            color: #fafafa;
-        }
-
-        .btn {
-            background: #d62828;
-            padding: 10px 18px;
-            border-radius: 8px;
-            color: white;
-            text-decoration: nome;
-            font-weight: bold;
-            display: inline-block;
-            margin-top: 18px;
-        }
-
-        @media (max-width: 800px) {
-            .card {
-                flex-direction: column;
-                text-align: center;
-            }
-            .card.reverse {
-                flex-direction: colum;
-            }
-            img {
-                width: 100%;
-                max-width: 420px;
-            }
-            p {
-                margin: 0 auto;
-            }
-        }
-    </style>
+    <title>Cursos Premium</title>
+    <link rel="stylesheet" href="cursos.css">
 </head>
 
 <body>
 
+    <!-- HEADER NOVO -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="img/icon_logo.png" alt="Logo">
+                <div class="logo-text">
+                    <h1>RESILIBR</h1>
+                    <span>INOVAÇÃO QUE SE INTEGRA.</span>
+                </div>
+            </div>
+
+            <nav class="nav-menu">
+                <a href="#">Início</a>
+                <a href="#">Cursos</a>
+                <a href="#">Sobre</a>
+                <a href="#">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- SEÇÃO DOS CURSOS -->
     <div class="container">
 
+        <div class="curso">
+            <img src="https://images.unsplash.com/photo-1543286386-713bdd548da4">
+            <div class="curso-texto">
+                <h2>Curso de Finanças e Investimentos</h2>
+                <p>Aprenda a organizar sua vida financeira e dominar investimentos como renda fixa, renda variável, ações, FIIs e muito mais.</p>
 
-        <div class="card">
-            <div>
-                <h2>Curso de finanças</h2>
-                <p>
-
-                    
-                </p>
-                <a class="btn" href="#"></a>
-
-                <img src="https://i.ibb.co/TWC7KpB/finan-as.png" alt="imagem Finanças">
-            </div>
-
-
-            <div class="card reverse">
-                <div>
-
-                    <h2>Curso de Desenvolvimento de sistemas</h2>
-
-                    <p>
-                        Aprenda de
-                    </p>
+                <div class="info">
+                    <p>📚 Carga horária: 40 horas</p>
+                    <p>🎓 Certificado válido</p>
+                    <p>💻 Modalidade: Online</p>
                 </div>
 
+                <div class="preco">
+                    <div class="old">De R$ 499,90</div>
+                    <div class="new">Por R$ 89,90</div>
+                </div>
+
+                <a href="#" class="btn">Comprar Agora</a>
+            </div>
+        </div>
+
+        <div class="curso reverse">
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c">
+            <div class="curso-texto">
+                <h2>Curso de Desenvolvimento de Sistemas</h2>
+                <p>Aprenda a programar do zero ao avançado.</p>
+
+                <div class="info">
+                    <p>📚 Carga horária: 60 horas</p>
+                    <p>🎓 Certificado válido</p>
+                    <p>💻 Modalidade: Online</p>
+                </div>
+
+                <div class="preco">
+                    <div class="old">De R$ 699,90</div>
+                    <div class="new">Por R$ 129,90</div>
+                </div>
+
+                <a href="#" class="btn">Comprar Agora</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- RODAPÉ -->
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-section">
+                <h2>Sobre a Plataforma</h2>
+                <p>
+                    Somos uma plataforma dedicada a ensinar habilidades que transformam vidas.
+                    Cursos objetivos e atualizados criados para iniciantes e profissionais.
+                </p>
             </div>
 
-
-
-
+            <div class="footer-section">
+                <h2>Contato</h2>
+                <ul>
+                    <li>Email: suporte.resilibr@gmail.com</li>
+                    <li>WhatsApp: (11) 40028-8922</li>
+                    <li>Redes sociais: ResiliBr</li>
+                </ul>
+            </div>
 
         </div>
 
+        <div class="footer-bottom">
+            © 2025 ResiliBr. Todos os direitos reservados.
+        </div>
+    </footer>
 
-
-
-    </div>
-    
 </body>
 </html>
