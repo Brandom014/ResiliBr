@@ -91,3 +91,78 @@ body {
     flex-direction: row-reverse;
 }
 
+/* ======= IMAGEM DO CURSO (EFEITOS PREMIUM) =============================*/
+
+.curso img {
+    width: 52%; /* Ocupa pouco mais da metade do card */
+    height: 360px; /* Altura maior para impacto visual */
+    border-radius: 24px; /* Cantos arredondados */
+    object-fit: cover; /* Corta a imagem sem deformar */
+    object-position: center; /* Centraliza a parte importante da imagem */
+
+    /* Melhorias visuais: contraste, brilho e saturação */
+    filter: contrast(1.18) brightness(1.10) saturate(1.20);
+
+    /* Moldura premium com gradiente */
+    border: 2px solid transparent;
+    background: linear-gradient(145deg, rgba(255,0,0,0.4), rgba(255,255,255,0.1)) border-box;
+    
+    /* Glow difuso para dar sensação de profundidade */
+    box-shadow:
+        0px 0px 45px rgba(255, 0, 0, 0.28),
+        0px 0px 80px rgba(255, 0, 0, 0.15),
+        0px 12px 40px rgba(0, 0, 0, 0.65);
+
+    /* Efeito vidro (glassmorphism) */
+    backdrop-filter: blur(4px);
+
+    /* Animação suave ao aparecer na tela */
+    opacity: 0;
+    transform: translateY(20px) scale(0.97);
+    animation: aparecer 0.8s ease forwards;
+
+    transition: 0.45s ease; /* Suaviza hover */
+}
+
+/* Animação de aparecimento */
+@keyframes aparecer {
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Hover cinematográfico da imagem */
+.curso img:hover {
+    transform: scale(1.08); /* Zoom suave */
+    box-shadow:
+        0px 0px 65px rgba(255, 50, 50, 0.35),
+        0px 0px 100px rgba(255, 0, 0, 0.35),
+        0px 14px 50px rgba(0, 0, 0, 0.75);
+    filter: contrast(1.28) brightness(1.15) saturate(1.30); /* Mais brilho e saturação */
+}
+
+/* ===== CONTEÚDO DO CURSO ===============*/
+
+.curso-texto {
+    width: 48%; /* Ocupa o restante do card */
+    display: flex;
+    flex-direction: column;
+    gap: 18px; /* Espaço entre os elementos de texto */
+}
+
+.curso-texto h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    /* Texto com gradiente para destaque */
+    background: linear-gradient(90deg, #fff, #ff6666);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.curso-texto p {
+    font-size: 17px;
+    color: #d4d4d4;
+    line-height: 1.7;
+}
