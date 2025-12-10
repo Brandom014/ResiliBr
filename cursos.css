@@ -166,3 +166,126 @@ body {
     color: #d4d4d4;
     line-height: 1.7;
 }
+
+/* ===== INFORMAÇÕES DO CURSO (CARGA HORÁRIA, MODALIDADE ETC) =======================*/
+.info {
+    display: flex;
+    flex-wrap: wrap; /* Permite quebrar linha em telas menores */
+    gap: 15px;
+    font-size: 15px;
+    color: #ccc;
+}
+
+/* =========== PREÇO  ==================*/
+.preco {
+    display: flex;
+    align-items: baseline; /* Alinha o preço antigo e novo pela linha de base */
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.preco .old {
+    text-decoration: line-through; /* Riscado para mostrar desconto */
+    color: #888;
+    font-size: 16px;
+}
+
+.preco .new {
+    font-weight: 700;
+    font-size: 22px;
+    color: #ff3131; /* Destaque para o preço promocional */
+}
+
+/* ============ BOTÃO DE COMPRA ======================*/
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 28px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 10px;
+    /* Gradiente moderno */
+    background: linear-gradient(135deg, #ff3a3a, #d70000);
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+    box-shadow: 0 5px 20px rgba(255, 0, 0, 0.3); /* Sombra do botão */
+}
+
+.btn:hover {
+    transform: scale(1.05); /* Zoom ao passar mouse */
+    background: linear-gradient(135deg, #ff5151, #c10000);
+    box-shadow: 0 8px 25px rgba(255, 0, 0, 0.45);
+}
+
+/* ======= FOOTER ====================*/
+
+.footer {
+    background: #000;
+    border-top: 1px solid #222;
+    padding: 60px 20px 30px;
+    margin-top: 100px;
+}
+
+.footer-container {
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-section h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.footer-section p,
+.footer-section li {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #222;
+    color: #888;
+}
+
+/* =====RESPONSIVIDADE (TELAS MENORES)========*/
+
+@media (max-width: 900px) {
+
+    /* Cards ficam empilhados e centralizados */
+    .curso,
+    .curso.reverse {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .curso img,
+    .curso-texto {
+        width: 100%; /* Ocupa toda a largura */
+    }
+
+    .curso-texto h2 {
+        font-size: 28px; /* Ajusta título */
+    }
+
+    .curso-texto p {
+        font-size: 16px;
+    }
+
+    .preco .new {
+        font-size: 20px; /* Ajusta preço promocional */
+    }
+
+    /* Menu desaparece em telas pequenas (pode criar menu mobile depois) */
+    .nav-menu {
+        display: none;
+    }
+}
