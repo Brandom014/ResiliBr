@@ -90,3 +90,99 @@ body {
 .register-text {
     color: rgb(255, 255, 255);   /* “Não tem conta?” */
 }
+
+.btn {
+    margin-bottom: 15px; /* adiciona espaço entre os botões */
+}
+
+.visitor-btn {
+    background-color: #444;
+}
+
+.visitor-btn:hover {
+    background-color: #666;
+}
+
+.visitor-btn {
+    margin-top: 15px; /* espaço entre os botões */
+    background-color: #444;
+}
+
+.visitor-btn:hover {
+    background-color: #666;
+}
+
+.visitor-btn {
+    display: block;
+    width: 100%;        /* deixa do tamanho total */
+    padding: 15px;      /* aumenta a altura */
+    font-size: 18px;    /* aumenta a fonte */
+    margin-top: 15px;   /* espaço entre os botões */
+    background-color: #444;
+    text-align: center; /* centraliza texto, importante para <a> */
+    border-radius: 8px;
+}
+
+.visitor-btn:hover {
+    background-color: #666;
+}
+
+/* ====== RESPONSIVIDADE LOGIN ====== */
+
+/* Tablets e telas médias */
+@media (max-width: 900px) {
+    .container {
+        max-width: 320px;
+        padding: 15px;
+    }
+
+    .login-box {
+        padding: 25px;
+    }
+
+    .input-group input {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .btn, .visitor-btn {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .register-text {
+        font-size: 13px;
+    }
+}
+
+/* Smartphones */
+@media (max-width: 600px) {
+    body {
+        height: auto;
+        padding: 20px;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 280px;
+        padding: 10px;
+    }
+
+    .login-box {
+        padding: 20px;
+    }
+
+    .input-group input {
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .btn, .visitor-btn {
+        padding: 12px;
+        font-size: 15px;
+    }
+
+    .register-text {
+        font-size: 12px;
+    }
+}

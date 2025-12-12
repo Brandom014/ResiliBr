@@ -151,15 +151,20 @@ body {
     gap: 18px; /* Espaço entre os elementos de texto */
 }
 
-.curso-texto h2 {
+h2.gradiente {
     font-size: 36px;
     font-weight: 700;
-    margin-bottom: 10px;
-    /* Texto com gradiente para destaque */
+
     background: linear-gradient(90deg, #fff, #ff6666);
     -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /* Para Firefox */
+    background-clip: text;
     color: transparent;
 }
+
+
 
 .curso-texto p {
     font-size: 17px;
@@ -256,36 +261,142 @@ body {
     color: #888;
 }
 
-/* =====RESPONSIVIDADE (TELAS MENORES)========*/
+/* ===== RESPONSIVIDADE CURSOS ===== */
 
+/* Tablets e telas médias */
 @media (max-width: 900px) {
-
-    /* Cards ficam empilhados e centralizados */
+    /* Cards ficam empilhados */
     .curso,
     .curso.reverse {
         flex-direction: column;
         text-align: center;
     }
 
+    /* Imagem e texto ocupam 100% da largura */
     .curso img,
     .curso-texto {
-        width: 100%; /* Ocupa toda a largura */
+        width: 100%;
     }
 
+    /* Ajuste dos títulos e textos */
     .curso-texto h2 {
-        font-size: 28px; /* Ajusta título */
+        font-size: 28px;
     }
-
     .curso-texto p {
         font-size: 16px;
     }
 
+    /* Ajusta preço promocional */
     .preco .new {
-        font-size: 20px; /* Ajusta preço promocional */
+        font-size: 20px;
     }
 
-    /* Menu desaparece em telas pequenas (pode criar menu mobile depois) */
+    /* Menu de navegação some (crie depois menu mobile se quiser) */
     .nav-menu {
         display: none;
     }
+}
+
+/* Smartphones e telas pequenas */
+@media (max-width: 600px) {
+    /* Reduz altura e espaçamento das imagens */
+    .curso img {
+        height: auto; /* deixa proporcional */
+        margin-bottom: 20px;
+    }
+
+    /* Títulos e textos menores */
+    .curso-texto h2 {
+        font-size: 24px;
+    }
+    .curso-texto p {
+        font-size: 15px;
+    }
+
+    /* Botão menor */
+    .btn {
+        font-size: 16px;
+        padding: 12px 20px;
+    }
+
+    /* Ajusta footer */
+    .footer-container {
+        flex-direction: column;
+        gap: 25px;
+    }
+}
+
+
+/* HEADER */
+.header {
+    width: 100%;
+    padding: 15px 0;
+    background: #0d0d0d;
+    border-bottom: 4px solid #d10000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.header-container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* LOGO */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img {
+    width: 55px;
+}
+
+.logo-text h1 {
+    margin: 0;
+    font-size: 22px;
+    color: #d60000;
+    letter-spacing: 2px;
+}
+
+.logo-text span {
+    font-size: 12px;
+    color: #ccc;
+}
+
+/* MENU */
+.nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 16px;
+    transition: 0.3s;
+    padding: 6px 10px;
+    border-radius: 5px;
+}
+
+.nav-menu a:hover {
+    background: #b30000;
+}
+
+.nav-menu .active {
+    background: #d10000;
+    font-weight: bold;
+}
+
+/* FIXA A ALTURA DO HEADER */
+.header {
+    height: 90px;
+}
+
+/* CRIA ESPAÇO ABAIXO DO HEADER */
+body {
+    padding-top: 90px;
 }

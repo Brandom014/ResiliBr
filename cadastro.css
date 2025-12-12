@@ -90,3 +90,87 @@ body {
 .login-text {
     color: white; 
 }
+
+
+/* ===== RESPONSIVIDADE - TELAS MENORES ===== */
+
+/* Tablets e telas médias */
+@media (max-width: 900px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .cadastro-box {
+        padding: 25px;
+    }
+
+    .cadastro-box h2 {
+        font-size: 24px;
+    }
+
+    .input-group input {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .btn {
+        font-size: 15px;
+        padding: 12px;
+    }
+
+    .login-text {
+        font-size: 13px;
+    }
+}
+
+/* Smartphones */
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .cadastro-box {
+        padding: 20px;
+    }
+
+    .cadastro-box h2 {
+        font-size: 20px;
+    }
+
+    .input-group input {
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .login-text {
+        font-size: 12px;
+    }
+}
+
+/* Telas muito pequenas */
+@media (max-width: 400px) {
+    .cadastro-box h2 {
+        font-size: 18px;
+    }
+
+    .input-group input {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .btn {
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    .login-text {
+        font-size: 11px;
+    }
+}
